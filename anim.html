@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .one {
+        width: 30px;
+        height: 30px;
+        background: rgb(255, 174, 0);
+        animation: anim 1s;
+    }
+    
+    .wrap {
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        justify-content: center;
+    }
+    @keyframes anim {
+        0% {
+            transform: rotate(1deg);
+            transform: translate(0px);
+        }
+        100% {
+            background: rgba(0, 0, 255, 0);
+            transform: rotate(11deg);
+            transform: translate(-50px,-300px);
+        }
+    }
+
+    /*  */
+    .two {
+        width: 30px;
+        height: 30px;
+        background: red;
+        animation: anime 1s;
+    }
+    @keyframes anime {
+        0% {
+            transform: rotate(1deg);
+            transform: translate(10px);
+        }
+        100% {
+            background: rgb(186, 186, 255);
+            transform: rotate(11deg);
+            transform: translate(0px,-325px);
+            background: rgba(255, 0, 0, 0);
+        }
+    }
+    .sree {
+        width: 30px;
+        height: 30px;
+        background: rgb(72, 255, 0);
+        animation: animes 1s;
+    }
+    @keyframes animes {
+        0% {
+            transform: rotate(1deg);
+            transform: translate(10px);
+        }
+        100% {
+            background: rgb(186, 186, 255);
+            transform: rotate(11deg);
+            transform: translate(50px,-350px);
+            background: rgba(255, 0, 0, 0);
+        }
+    }
+</style>
+<body>
+    <div class="wrap">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="sree"></div>
+    </div>
+</body>
+</html>
