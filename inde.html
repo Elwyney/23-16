@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       .one {
+        width: 30px;
+        height: 30px;
+        
+        animation: anim 1.5s;
+    }
+    
+    .wrap {
+        display:flex;
+        align-items: flex-end;
+        height: 100vh;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+    }
+    @keyframes anim {
+        0% {
+            
+            transform: translate(0px);
+            background: rgb(43, 43, 255);
+        }
+        100% {
+            background: rgba(0, 0, 255, 0);
+            transform: rotate(10deg);
+            transform: translate(-50px,-300px);
+            
+        }
+    }
+
+    /*  */
+    .two {
+        width: 30px;
+        height: 30px;
+        animation: anime 1.5s;
+    }
+    @keyframes anime {
+        0% {
+            transform: translate(0px);
+            background: rgb(255, 168, 5);
+        }
+        100% {
+            
+        
+            transform: translate(0px,-325px);
+            background: rgba(255, 0, 0, 0);
+        }
+    }
+    .sree {
+        width: 30px;
+        height: 30px;
+       
+        animation: animes 1.5s;
+    }
+    @keyframes animes {
+        0% {
+            transform: rotate(1deg);
+            transform: translate(0px);
+            background: rgb(8, 255, 61);
+        }
+        100% {
+            transform: rotate(11deg);
+            transform: translate(50px,-350px);
+            background: rgba(255, 0, 0, 0);
+        }
+    }
+    /* */
+    .wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        font-family: sans-serif;
+        width: 1100px;
+    margin: auto;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+   
+h2 {
+    color: rgb(17, 108, 228);
+}
+img {
+    position: absolute;
+    width: 250px;
+    border-radius: 50%;
+    z-index: 2;
+    height: 250px;
+    animation: kill 10s ease infinite;
+    position: relative;
+}
+img::after {
+    position: absolute;
+    height: 100vh;
+    width: 1000px;
+    content: "";
+    background-color: red;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: 99999999999999;
+}
+body {
+    background-image: url(./1920x1200_px_bokeh_branch_Cherry_Blossom_Depth_Of_Field_flowers_Trees-647419.jpg!d);
+    background-repeat: no-repeat;
+}
+body::after {
+    content: "";
+    width: 100%;
+    background-color: #0b090e8f;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+}
+@keyframes kill {
+    0% {
+        transform: rotate(0deg);
+    
+    }
+   
+    
+    50% {
+        box-shadow: 0 0 0 15px red,
+        0 0 0 30px rgba(255, 18, 18, 0.432),
+        0 0 0 45px rgba(255, 18, 18, 0.185);
+     
+    }
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
+
+.imgig {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+h1 {
+    color: white;
+    z-index: 999;
+    margin-left: 310px;
+    animation: alex 8s infinite;
+}
+@keyframes alex {
+    0% {
+        display: block;
+    }
+    100% {
+      
+        opacity: 1;
+    }
+}
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="imgig">
+            <img src="./BBW7ceRBKCc.jpg" alt="">
+            <h1>Не грусти</h1>
+        </div>
+        
+        <div id="img" class="wrap">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="sree"></div>
+        </div>
+    </div>
+ 
+</body>
+<script>
+    
+        
+            var audio = document.createElement("audio");
+    audio.src = "./рзо.mp3";
+    audio.play();
+        
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        
+
+
+
+
